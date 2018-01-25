@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>ja calculator</title>
+	</head>
+	<style>
+		body{
+			background-color: blueviolet;
+		}
+		.styles{
+			width: 30px;
+			height: 20px;
+			background-color:  3C8D2F;
+		}
+		.calculator{
+			padding-left: 500px;
+			background-color:  #FFEAC1;
+			width: 217px;
+			height: 274px;
+		   padding-left: 9px;
+			padding-top: 9px;
+			position: absolute;
+			right: 450px;
+			left: 500px;
+		}
+			h1{
+			padding-left: 480px;
+			}
+		.styles{
+			font-size:40px;
+				width: 50px;
+				height: 50px;
+			border-bottom-left-radius: 11px;
+			border-bottom-right-radius: 11px;
+			border-top-right-radius: 11px;
+			border-top-left-radius: 11px;
+		}
+		#myinput{
+				width:202px;
+				height:51px;
+			    padding: 1px;
+			padding-right: 0%;
+			padding-left: 0px;
+				border: 5px solid blue;
+			  text-align: right;
+				font-size: 31px;
+				color: blue;
+		}
+	</style>
+	<h1> calculator javascript</h1>
+			 <hr size =15px , color = black;>
+<body>
+<section class="calculator">
+<input type="text" id="myinput"/> <br> 
+ 
+<button class="styles"id="btn1" value="1" onclick="concatone()">1</button>
+<button class="styles"id="btn2" value="2" onclick="concattwo()">2</button>
+<button class="styles"id="btn3" value="3" onclick="concatthree()">3</button>
+<button class="styles" id="btn4" value="+" onclick="concatplus()">+</button><br>
+        
+<button class="styles"id="btn5" value="4" onclick="concatfour()">4</button>
+<button class="styles" id="btn6" value="5" onclick="concatfive()">5</button>
+<button class="styles" id="btn7" value="6" onclick="concatsix()">6</button>
+<button class="styles"id="btn8" value="-" onclick="concatminus()">-</button><br>
+        
+<button class="styles" id="btn9" value="7" onclick="concatseven()">7</button>
+<button class="styles" id="btn10" value="8" onclick="concategit()">8</button>
+<button class="styles" id="btn11" value="9" onclick="concatnine()">9</button>
+<button class="styles"id="btn12" value="*" onclick="concatmul()">*</button><br>
+        
+<button class="styles" id="btn13" value="0" onclick="concatzero()">0</button>
+<button class="styles" id="btn14" value="" onclick="concatrest()">c</button>
+<button class="styles" id="btn15" value="/" onclick="concatdiv()">/</button>
+<button class="styles" id="btn16" value="=" onclick="concategual()">=</button>
+  
+</section>
+	<script>
+		var inptId = document.getElementById("myinput").value,
+    btn1 = document.getElementById("btn1").value,
+    btn2 = document.getElementById("btn2").value,
+    btn3 = document.getElementById("btn3").value,
+    btn4 = document.getElementById("btn4").value,
+    btn5 = document.getElementById("btn5").value,
+    btn6 = document.getElementById("btn6").value,
+    btn7 = document.getElementById("btn7").value,
+    btn8 = document.getElementById("btn8").value,
+    btn9 = document.getElementById("btn9").value,
+    btn10 = document.getElementById("btn10").value,
+    btn11 = document.getElementById("btn11").value,
+    btn12 = document.getElementById("btn12").value,
+    btn13 = document.getElementById("btn13").value,
+    btn14 = document.getElementById("btn14").value,
+    btn15 = document.getElementById("btn15").value,
+    btn16 = document.getElementById("btn16").value;
+      
+    
+function concatone(){
+  inptId += btn1;
+    document.getElementById("myinput").value = inptId;  
+}
+function concattwo(){
+     inptId += btn2;
+    document.getElementById("myinput").value = inptId;  
+}
+function concatthree(){
+    inptId += btn3;
+    document.getElementById("myinput").value = inptId;  
+}
+function concatplus(){
+     inptId += btn4;
+    document.getElementById("myinput").value = inptId;  
+}
+function concatfour(){
+     inptId += btn5;
+    document.getElementById("myinput").value = inptId;  
+}
+function concatfive(){
+     inptId += btn6;
+    document.getElementById("myinput").value = inptId;  
+}
+function concatsix(){
+     inptId += btn7;
+    document.getElementById("myinput").value = inptId;  
+}
+function concatminus(){
+     inptId += btn8;
+    document.getElementById("myinput").value = inptId;  
+}
+function concatseven(){
+     inptId += btn9;
+    document.getElementById("myinput").value = inptId;  
+}
+function concategit(){
+     inptId += btn10;
+    document.getElementById("myinput").value = inptId;  
+}
+function concatnine(){
+     inptId += btn11;
+    document.getElementById("myinput").value = inptId;  
+}
+function concatmul(){
+     inptId += btn12;
+    document.getElementById("myinput").value = inptId;  
+}
+function concatzero(){
+     inptId += btn13;
+    document.getElementById("myinput").value = inptId;  
+}
+function concatrest(){
+     inptId = "";
+    document.getElementById("myinput").value = inptId;  
+}
+function concatdiv(){
+     inptId += btn15;
+    document.getElementById("myinput").value = inptId;  
+}
+function concategual(){
+    document.getElementById("myinput").value = 
+ eval(inptId);
+}
+
+
+
+
+
+		
+	</script>
+	</body>
+	</html>
